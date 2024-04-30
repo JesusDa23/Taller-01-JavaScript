@@ -1,10 +1,12 @@
 // 6.Escribe un programa que tome como entrada tus nombres y apellidos completos y cuente cuantos caracteres tiene, sin tener en cuenta los espacios.
 
-let nombres = "Jesus David";
-let apellidos = "Chavarro Castro";
+let nombreCompleto = prompt("Introduce tu nombre completo: ")
+let contar = 0;
 
-let caracterNombres = nombres.length;
-console.log(caracterNombres)
+for(i = 0; i < nombreCompleto.length; i++)
+if (nombreCompleto[i] !== ' '){
+    contar++;
+}
 
-let caracterApellidos = apellidos.length;
-console.log(caracterApellidos)
+console.log(contar)
+
